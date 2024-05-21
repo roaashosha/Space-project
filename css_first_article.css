@@ -1,0 +1,219 @@
+body{
+    background:rgb(66,0,65);
+    margin: 0px;
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.946);
+    border-style:double;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-top: 39%;
+    margin-right: 220px;
+    margin-left: 220px;
+    margin-bottom: 0px;
+    z-index: 3;
+    overflow: auto;
+   overflow-x: hidden;
+    position: relative;
+}
+/* (Scroll down for gradient rules) */
+#show_bg {
+    background-image:
+    linear-gradient(to bottom, rgba(66, 0, 65, 0.079) ,rgba(66, 0, 65, 0.627),rgba(66,0,65)),
+    url('test5.jpg');
+    width: 100%;
+    height: 700px;
+    z-index: 1;
+    background-size: cover;
+}
+nav{
+    overflow: auto;
+    margin: -675px;
+    width: 100%;
+    height: 70px;
+    padding-top: 30px;
+    margin-left: -80px;
+    z-index: 2;
+    position: relative;
+}
+.nav{
+    color:rgba(255, 255, 255, 0.807);
+    font-size: 25px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding-top:50px;
+    padding-bottom: 5px;
+    margin-left: 150px;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-weight: bolder;   
+}
+.nav:hover{
+    color: black;
+}
+#page_title{
+    text-align: justify;
+    font-size: 47px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-family:'Times New Roman', Times, serif;
+}
+#date{
+    font-weight: bolder;
+    font-size:large;
+    float: left;
+    width: 100%;
+    font-size: 24px;
+    text-indent: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+figure{
+    width: 45%;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    float: right;
+    border-left: 10px rgb(154, 151, 151);
+    border-style:hidden;
+    display: block;
+    position: relative;
+}
+#img1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 55%;
+    display: block;
+}
+figcaption{
+    padding-left: 54px;
+    font-size: 26px;
+    text-align: left; 
+    font-size: large; 
+    color:rgb(97, 97, 176) ;
+    width:86%;
+    display: block;
+    font-style: italic;
+}
+section{
+    
+    width: 45%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    float: left;
+    font-size: 26px;
+    text-indent: 13px;
+}
+.articles {
+    float: left;
+    text-align: left;
+    font-size: 29px;
+    text-indent: 10px;
+    margin-top: 10px;
+    position: relative;
+    display: block;
+}
+.headers{
+    float: left;
+    position: relative;
+    font-size: 35px;
+}
+video{
+    width: 50%;
+    height: inherit;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+}
+/* Styles for the star rating */
+.rating {
+    display: flex;
+    justify-content:left;
+    margin-top: -20px;
+    width: 100%;
+    padding-left:30px ;
+    float: left;
+    position: relative;
+}
+.star {
+    font-size: 53px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.star:hover, .star.checked {
+    color: orange;
+}
+#commentForm {
+    float: left;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.lable{
+    display: flex;
+    font-size: 32px;
+}
+#inp1{
+    float: left;
+    padding-top: 5px;
+}
+textarea ,button{
+    display: inline;
+    vertical-align:baseline;
+    font-size: 28px;
+}
+.commentContainer {
+    border: 5px groove grey; /* Add border style for each comment */
+    margin-bottom: 15px; /* Add margin between comments */
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-size: 28px;
+}
+
+#commentsContainer {
+    max-width: 98%;
+    margin: 15px 20px;
+    float: left;
+    font-size: 28px;
+    position: relative;
+}
+
+#submit {
+    margin-left: 110%;
+    font-size: 20px;
+    width: 200px;
+    display: flex;
+    margin-bottom: 10px;
+    height: 40px;
+    border: 5px ;
+    background-color:  rgb(94, 0, 92);
+    color: aliceblue;
+    padding-left: 13px;
+    padding-top: 9px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #b32ebf;
+    color: aliceblue;
+}
+
+.hide {
+    display: none;
+}
+

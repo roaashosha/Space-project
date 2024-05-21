@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="telele.png">
+    <title>Events</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+
+    <div class="calendar-month">
+        <div class="calendar-month-header">
+            <div class="calendar-month-header-selected-month">December 2023</div>
+        </div>
+    
+        <div class="day-of-week">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+        </div>
+    
+        <div class="days-grid" id="calendar-body">
+            <!-- Calendar days will be inserted here dynamically using JavaScript -->
+        </div>
+    </div> 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const calendarBody = document.getElementById('calendar-body');
+    const daysInMonth = 31;
+
+    // Events for specific days with description
+    const events = {
+        5: { description: `<b style="padding-top:5px;">Mercury consists of a large iron core surrounded by a thin rocky shell.</b><br><img src="mercury.jpg" style="width:300px; height:160px; padding-top:10px;"><br> <p style="text-content:justify; padding: 0px 5px 5px 5px;">When Is the Best Time to See Mercury Warning: Never point binoculars or a telescope in the direction of the Sun—it can cause permanent eye damage. Do not try to observe Mercury while any part of the Sun is above.<br> Because Mercury is small and lies close to the Sun, it is a challenge to observe. It can be seen with the naked eye shortly before sunrise or soon after sunset.The best time to catch Mercury is within a week or so of its greatest elongation: this is when Mercury appears to be at its farthest distance from Sun as seen from Earth. These periods occur twice every 116 days or so (roughly every four months).</p>`, data: ['Event 1'] },
+        12: { data: ['Event 2'] },
+        15: { data: ['Event 3'] },
+        23: {  data: ['Event 4'] },
+        27: { data: ['Event 5'] },
+    };
+
+    for (let day = 1; day <= daysInMonth; day++) {
+        const eventDate = new Date(2023, 11, day);
+        const dayOfWeek = eventDate.getDay();
+
+        const calendarDay = document.createElement('div');
+        calendarDay.className = 'calendar-day';
+
+        const dayLabel = document.createElement('span');
+        dayLabel.textContent = day;
+        calendarDay.appendChild(dayLabel);
+
+        // Check if the day has events
+        if (events[day]) {
+            events[day].data.forEach(eventText => {
+                const event = document.createElement('div');
+                event.className = 'event';
+                event.textContent = eventText;
+
+                // Create a tooltip for event details
+                const tooltip = document.createElement('div');
+                tooltip.className = 'event-tooltip';
+                // Use innerHTML to render HTML code
+                tooltip.innerHTML = events[day].description;
+                event.appendChild(tooltip);
+
+                // Show tooltip on hover
+                event.addEventListener('mouseenter', function () {
+                    if (events[day].description.trim() === "") {
+                        tooltip.style.display = 'none';
+                    } else {
+                        tooltip.style.display = 'block';
+                    }
+                });
+                // Hide tooltip on mouse leave
+                event.addEventListener('mouseleave', function () {
+                    tooltip.style.display = 'none';
+                });
+                calendarDay.appendChild(event);
+            });
+        }
+        calendarBody.appendChild(calendarDay);
+    }
+});
+    </script>
+    </body>
+    </html>

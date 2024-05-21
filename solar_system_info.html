@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Solar System</title>
+        <link rel="stylesheet" href="solar_info.css">
+        <link rel="icon" type="image/x-icon" href="planet.png">
+    </head>
+    <body>
+        <script src="https://kit.fontawesome.com/445db4d9b4.js" crossorigin="anonymous"></script>
+        <div class="sun"></div>
+        <div class="mercury-outline">
+            <div class="mercury">
+                <p>Mercury</p>
+            </div>
+        </div>
+        <div class="venus-outline">
+            <div class="venus">
+                <p>Venus</p>
+            </div>
+        </div>
+        <div class="earth-outline">
+            <div class="earth">
+                <p>Earth</p>
+            </div>
+        </div>
+        <div class="mars-outline">
+            <div class="mars">
+                <p>Mars</p>
+            </div>
+        </div>
+        <div class="jupiter-outline">
+            <div class="jupiter">
+                <p>Jupiter</p>
+            </div>
+        </div>
+        <div class="saturn-outline">
+            <div class="saturn">
+                <p>Saturn</p>
+            </div>
+        </div>
+        <div class="urans-outline">
+            <div class="urans">
+                <p>Urans</p>
+            </div>
+        </div>
+        <div class="neptune-outline">
+            <div class="neptune">
+                <p>Neptune</p>
+            </div>
+        </div>
+        <i class="fa-solid fa-circle-info" id="mercury_info_icon"></i>
+        <i class="fa-solid fa-circle-info" id="earth_info_icon"></i>
+        <div class="mercury_aside">
+            <i class="fa-solid fa-x" id="X"></i>
+            <h1>Mercury</h1>
+            <img src="mercury.png" alt="Image of Mercury">
+            <p id="mercury_info">Mercury—the smallest planet in our solar system and closest to <br> the Sun—is only slightly larger 
+                than Earth's Moon. Mercury is the <br> fastest planet, zipping around the Sun every 88 Earth days.</p>
+            <ul class="container">
+                <li><strong>88 &nbsp;&nbsp; EARTH DAYS</strong> <hr> Length Of Year</li>
+                <li><strong>0.4 &nbsp;&nbsp; AU</strong> <hr> Distance From Sun</li>
+                <li><strong>ROMAN GOD OF SPEED</strong> <hr> Namesake </li>
+                <li><strong>0</strong> <hr> Moons</li>
+            </ul><br><br>
+            <center><a href="#">READ MORE ></a></center>
+        </div>
+        <div class="earth_aside">
+            <i class="fa-solid fa-x" id="X"></i>
+            <h1>Earth</h1>
+            <img src="earth.png" alt="Image of Earth">
+            <p id="earth_info">Earth—our home planet—is the only place we know of so 
+                <br> far that 's inhabited by living things. It's also the only planet 
+                <br> in our solar system with liquid water on the surface.</p>
+            <ul class="container">
+                <li><strong>365.25 &nbsp;&nbsp; DAYS</strong> <hr> Length Of Year</li>
+                <li><strong>1 &nbsp;&nbsp; AU</strong> <hr> Distance From Sun</li>
+                <li><strong>VARIATION OF "THE GROUND" IN MANY LANGUAGES</strong> <hr> Namesake </li>
+                <li><strong>1</strong> <hr> Moons</li>
+            </ul><br><br>
+            <center><a href="#">READ MORE ></a></center>
+        </div>
+        <div class="btnBack">
+        <a href="solar_system_simulation.html" id="btnBack"><i class="fa-solid fa-earth-asia"></i>
+            &nbsp; Simulation</a>
+        </div>
+        <script>
+                let mercury_aside = document.querySelector('.mercury_aside');
+                let earth_aside = document.querySelector('.earth_aside');
+        
+                document.addEventListener('click', function(event) {
+                if (event.target.id === 'mercury_info_icon') {
+                    mercury_aside.style.display = 'block';
+                }
+                if (event.target.id === 'earth_info_icon') {
+                    earth_aside.style.display = 'block';
+                }
+                if (event.target.id === 'X') {
+                    mercury_aside.style.display = 'none';
+                    earth_aside.style.display = 'none';
+                }
+            });
+        </script>         
+    </body>
+</html>

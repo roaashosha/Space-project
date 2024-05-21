@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Webb and Hubble telescopes</title>
+    <link rel="stylesheet" href="css_first_article.css">
+    <link rel="icon" type="image/x-icon" href="application.png">
+</head>
+<body>
+    <div id='show_bg'></div>
+    <nav>
+        <center >
+            <a class="nav" href="">ABOUT US</a> 
+            <a class="nav" href="team.html" target="_blank">TEAM</a> 
+            <a class="nav" href="conn.html" target="_blank">CONTACTS</a> 
+            <a class="nav" href="https://voyager-telescopes.com/factory/" target="_blank">SHOP</a>
+        </center>
+    </nav>
+    
+    <main>
+    <header>
+        <h1 id="page_title">Webb and Hubble telescopes unite to image flashy clash of galaxies cluster</h1>
+        <p  style="text-align: left; font-size: 26px; margin-top: 5px; padding-left: 15px;">
+            Together the space observatories have gleaned a comprehensive picture of a merging galaxy cluster,
+            including several new background objects magnified by the cluster itself.
+        </p>
+        <div id="date">
+            <p class="date" id="currentDate"></p>
+        </div>
+        <script>
+            // Get the current date and time
+            function getCurrentDate() {
+                    const now = new Date();
+                    const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                    const currentDate = now.toLocaleDateString(undefined, dateOptions);
+                    return currentDate;
+                }
+                // Update the date element
+                function updateDate() {
+                    const currentDate = getCurrentDate();
+                    document.getElementById('currentDate').textContent = currentDate;
+                }
+                // Update every second
+                setInterval(updateDate, 1000);
+                // Initial update
+                updateDate();
+        </script>
+    </header>
+        <figure >
+            <img id="img1" src="hubble_image.webp" >
+            <figcaption >This panchromatic view of galaxy cluster MACS0416 was created by combining infrared observations from NASA’s James Webb Space Telescope with visible-light data from NASA’s 
+                Hubble Space Telescope. Credit: NASA, ESA, CSA, STScI, Jose M. Diego (IFCA)
+                Jake Summers (ASU), Rogier Windhorst (ASU), Haojing Yan (University of Missouri)</figcaption>
+        </figure>
+    <section>
+        <p >
+            A vibrant and shimmering new image of a massive galaxy cluster is dazzling astronomers. By combining the James Webb Telescope’s (JWST) infrared sight with the Hubble Space Telescope’s (HST) optical deep-field views of the universe, scientists have constructed the most colorful panorama of the MACS0416 galaxy cluster to date.
+        </p>
+        <p >The glitzy cluster, dubbed the Christmas Tree Galaxy Cluster, is 4.3 billion light-years from Earth and consists of two merging galaxy clusters. Eventually the two groups will combine to form one larger cluster. The image reveals not only the cluster’s core, but also galaxies residing outside the cluster as well as transient objects that appear bright for a short period of time before disappearing.
+            Researchers suspect that two of 14 identified transients may be supernovae. The other 12 appear to be individual stars in three different galaxies magnified by gravitational lensing, which occurs when a massive object (such as a cluster) passes in front of a more distant background object, such as these three galaxies. The foreground cluster acts as a magnifying glass, temporarily brightening and enlarging features in the more distant background source.
+        </p>     
+        <p >Details about the transients objects have been accepted for publication in the Astrophysical Journal and are currently available on the arXiv preprint server.
+        “We’re calling MACS0416 the Christmas Tree Galaxy Cluster, both because it’s so colorful and because of the flickering lights we find within it,” said study lead author Haojing Yan of the University of Missouri in a press release.
+        </p>
+    </section>
+
+    <h1 class="headers" style="width: 100%;"> Flickering lights</h1>
+        <p class="articles"> 
+        HST first observed the MACS0416, also called MACS J0416.1−2403, in 2014 as part of the Frontier Fields project, which used galaxies as a giant magnifying lenses to see even more distant galaxies too far for Hubble to see on its own.
+        Now, JWST has taken the effort one step further by adding its infrared eye, resulting in 12 new transient objects.
+        The team identified the new set by comparing four different epochs of JWST images of the cluster to look for “lights” that appeared and disappeared over the course of 126 days.
+        “These transient objects appear bright for only a short period of time and then are gone; it’s like we’re peering through a shifting magnifying glass,” Yan said. “Right now, we have this rare chance that nature has given us to get a detailed view of individual stars that are located very far away. 
+        While we are currently only able to see the brightest ones, if we do this long enough — and frequently enough — we will be able to determine how many bright stars there are, and how massive they are.”
+        </p>
+
+    <video src="galaxcyVideo.mp4" controls width="800" height="650"> </video>
+     
+    <h1 class="headers" style="width: 100%;">Estimating distance with color</h1>
+    <p class="articles">
+        In this composite image, the shortest wavelengths of light appear in blue. The longest wavelengths are red, and those in between are green. The resulting image is the most colorful view of the cluster to date. 
+        The colors also tell researchers how far an object is. Bluer galaxies are closer and show the most star formation, as gleaned by Hubble. Red galaxies tend to be farther away and can only be seen by JWST.
+        However, some galaxies can also appear red because of the amount of dust they contain, as dust absorbs bluer wavelengths of light, letting only the red through. 
+    </p>
+    </script>
+    <h1 class="headers">Do you like this?</h1>
+    <div class="rating">
+        <span class="star" onclick="rate(1)">★</span>
+        <span class="star" onclick="rate(2)">★</span>
+        <span class="star" onclick="rate(3)">★</span>
+        <span class="star" onclick="rate(4)">★</span>
+        <span class="star" onclick="rate(5)">★</span>
+    </div>
+
+    <script>
+        // Star rating JavaScript
+        function rate(rating) {
+            // Reset all stars
+            const stars = document.querySelectorAll('.star');
+            stars.forEach(star => star.classList.remove('checked'));
+
+            // Highlight selected stars
+            for (let i = 0; i < rating; i++) {
+                stars[i].classList.add('checked');
+            }
+
+            // You can send the rating to a server or perform other actions as needed
+            // For now, let's just log the rating to the console
+            console.log('User rated:', rating);
+        }
+    </script>
+     <!-- Comments Section -->
+    <section id="commentsSection">
+        <h2 style="margin-left:-20px ; width: 100%;margin-bottom: 10px;">User Comments:</h2>
+    </section>
+    <!-- Comment Input Form -->
+    <form id="commentForm">
+        <div id="inp1">
+            <label for="userName" class="lable">Your Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="userName" name="userName"  required style="font-size: 28px; margin-left: -30px;">
+        </div>
+        <br><br><br><br><br>
+        <div id="inp1">    
+            <label for="commentContent" class="lable">Your Comment:</label>
+            <textarea id="commentContent" name="commentContent" rows="1" cols="21"  required></textarea>
+            <button type="button" id="submit" style="margin-top: -40px;" onclick="submitComment()"><strong>Submit Comment</strong></button>
+        </div>
+    </form>
+    <div id="commentsContainer" class="hide"></div>
+    <script>
+        function submitComment() {
+            const userName = document.getElementById('userName').value;
+            const commentContent = document.getElementById('commentContent').value;
+            const currentTime = new Date().toLocaleString();
+    
+            // Create a new div element for the comment
+            const commentContainer = document.createElement('div');
+            commentContainer.className = 'commentContainer';
+    
+            // Create and set the content for the comment
+            if(commentContent != ""){
+            commentContainer.innerHTML = `${currentTime} <br> <strong>${userName}</strong> : ${commentContent} <br> <br>`;
+    
+            // Append the comment container to the commentsContainer
+            document.getElementById('commentsContainer').appendChild(commentContainer);
+            document.getElementById('commentsContainer').classList.remove('hide');
+            }else{
+                alert("Comment Required!")
+            }
+    
+            // Clear the form fields after submission
+            document.getElementById('commentContent').value = '';
+        }
+    </script>           
+    </main>  
+</body>
+</html>

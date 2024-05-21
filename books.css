@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(bg4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 950px;
+    
+}
+#navbar{
+    overflow: auto;
+    width: 100%;
+    height: 70px;
+    padding-top: 50px;
+    position: relative;
+}
+.nav{
+    color:rgba(255, 255, 255, 0.807);
+    font-size: 25px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding-top:50px;
+    padding-bottom: 5px;
+    margin-left: 150px;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-weight: bolder;   
+}
+.nav:hover{
+    color: black;
+}
+
+#book1{
+    width: 85%;
+    height:80%;
+    background-color:rgb(235, 220, 235);
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 5.5%;
+    margin-bottom: 100%;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#bookone{
+    width: 330px;
+    margin-top: 120px;
+    margin-right: 100px;
+    float:right;
+    border-radius: 8px;
+    position: relative;
+}
+
+#p1{  
+    font-size:37px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    float: left;
+    margin-left:20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-weight: bolder;
+
+}
+#write1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    width: 65%;
+    color:black;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 0px;
+    padding-left: 10px;
+    position: relative;
+    
+}
+#link{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:30px ;
+    padding-left: 3px;
+    color:purple;
+    font-weight: bolder;
+}
+
+#link:hover{
+    color: rgb(7, 7, 170);
+}
+#rate{
+    font-size: 15px;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    margin-right: -44px;
+    margin-top: 30px;
+    float: right;
+}
+
+.rating {
+    width: 100%;
+    margin-right: 7%;
+    margin-top: -130px;
+    float: right;
+    text-align: right;
+    justify-content: center;
+    text-indent: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    position: relative;
+}
+.star {
+    font-size: 47px;
+    color:orange;
+    cursor: pointer;
+}
+.star.checked {
+    color: orange;
+}
+
+
+

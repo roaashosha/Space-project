@@ -1,0 +1,93 @@
+body {
+    /*background:linear-gradient(to right, rgb(66,0,65),rgb(198,0,192)) ;*/
+    background-attachment:fixed;
+    background-size: cover;
+    background-image: url(wallpaper2.jpg);
+    font-family: 'Arial', sans-serif;
+    align-items: center;
+    justify-content: center;
+    zoom: 165%;
+}
+.calendar-month {
+    border: #fff;
+    margin-top: 25px;
+    margin-left: 25%;
+    width: 50%;
+    background-color:whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 20px;
+}
+.calendar-month-header {
+    display: flex;
+    padding-bottom: 5px;
+   justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 10px;
+}
+.calendar-month-header-selected-month {
+    font-size: 24px;
+    font-weight: 600;
+}
+.day-of-week {
+    color: black;
+    font-size: 18px;
+    background-color: #fff;
+    padding-top: 10px;
+    display: grid;  /* to display horozintal*/
+    text-align: center;
+    margin-left: 2px;
+    margin-right: 2px;
+    grid-template-columns: repeat(7, 1fr);
+}
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    position: relative;
+    border-top: 1px solid white;
+}
+.calendar-day {
+    text-align: center;
+    position: relative;
+    min-height: 100px;
+    font-size: 16px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background-color: #fff;
+    color: black;
+    padding: 5px;
+}
+.calendar-day:nth-child(29) {
+    border-bottom-left-radius: 20px;
+}
+.calendar-day span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 3px;
+}
+.event {
+    width: 60px;
+    background-color: #AD137A;
+    color: white;
+    padding: 5px 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.event:hover {
+    background-color: rgb(103, 2, 101);
+}
+.event-tooltip {
+    display: none;
+    position: absolute;
+    left: 90px;
+    margin-top: -20px;
+    width: 400px;
+    background-color: #AD137A;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    z-index: 1;
+}

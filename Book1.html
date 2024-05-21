@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet " type="text/css" href="books.css">
+        <link rel="icon" type="image/x-icon" href="recommendation.png">
+        <title> The Science of Interstellar </title>
+    </head>
+    <div id="navbar">
+        <a class="nav" href="">ABOUT US</a> 
+        <a class="nav" href="team.html" target="_blank">TEAM</a> 
+        <a class="nav" href="conn.html" target="_blank">CONTACTS</a>
+        <a class="nav" href="https://voyager-telescopes.com/factory/" target="_blank">SHOP</a>
+</div>
+    <div id="book1">
+        <img src="book2.jpg" id="bookone">
+        <p id="p1">
+            The Science of Interstellar<br>
+            Author: Kip Thorne<br>
+            Publisher: W. W. Norton & Company (2014)
+        </p>
+            <p id="write1"> 
+                &nbsp;Director Christopher Nolan’s time-twisting sci-fi epic,Interstellar,was one of that
+                decade’s most ambitious films,and now Kip Thorne dives into the actual science 
+                behind the blockbuster Hollywood feature.Thorne is the Nobel Prize-winning
+                 physicist who collaborated with Nolan on the scientific aspects of Interstellar,
+                 which explains why it’s one of the 5 most realistic space movies out there.
+                 This book explains how the movie’s eye-opening events and stunning 
+                visuals are actually grounded in real-life science.<br><br>
+                Thorne’s insights derive from the screenwriting and filming process and describe
+                the physical laws that govern our universe and the related astonishing phenomena.
+                You’ll be captivated as the author shares his own experiences working as Nolan’s
+                science adviser as well as exploring the rooted science itself. Chapters target
+                areas of interest such as wormholes,black holes, interstellar travel, and more.<br><br>
+                <a id="link" href="">Buy The Science of Interstellar Now!</a>
+            </p>
+    
+            <div class="rating">
+                <span class="star" onclick="rate(1)">★</span>
+                <span class="star" onclick="rate(2)">★</span>
+                <span class="star" onclick="rate(3)">★</span>
+                <span class="star" onclick="rate(4)">★</span>
+                <span class="star" onclick="rate(5)">★</span>
+                <p id="rate">4.8 • 35.9K Ratings</p>
+            </div>
+    </div>
+
+    <script>
+        // Star rating JavaScript
+        function rate(rating) {
+            // Reset all stars
+            const stars = document.querySelectorAll('.star');
+            stars.forEach(star => star.classList.remove('checked'));
+
+            // Highlight selected stars
+            for (let i = 0; i < rating; i++) {
+                stars[i].classList.add('checked');
+            }
+
+            // You can send the rating to a server or perform other actions as needed
+            // For now, let's just log the rating to the console
+            console.log('User rated:', rating);
+        }
+    </script>
+
+</html>    

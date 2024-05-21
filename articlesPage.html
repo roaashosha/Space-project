@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Articles</title>
+    <link rel="stylesheet" type="text/css" href="articlesCSS.css">
+    <link rel="icon" type="image/x-icon" href="application.png">
+</head>
+<body>
+    <div id='show_bg'></div>
+    <nav>
+        <center >
+            <a class="nav" href="">ABOUT US</a> 
+            <a class="nav" href="team.html" target="_blank">TEAM</a> 
+            <a class="nav" href="conn.html" target="_blank">CONTACTS</a>
+            <a class="nav" href="https://voyager-telescopes.com/factory/" target="_blank">SHOP</a>
+        </center>
+    </nav>
+    <form id="searchForm" onsubmit="return false;">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button onclick="performSearch()">Search</button>
+    </form>
+    <main>
+    <section>
+    <a href="first_article.html" target="_blank"  class="search-result" class="fade">
+        <img  src="hubble_image.webp" >
+        <h1 class="header" >Webb and Hubble telescopes unite to image flashy clash of galaxies cluster. </h1> 
+       <p class="more">Together the space observatories have gleaned a comprehensive picture of a merging galaxy cluster, including several new background objects magnified by the cluster itself.&nbsp;<b>Read More</b></p>
+    </a>    
+    </div>
+    <a href=""  class="search-result" class="fade">
+        <img  src="horsehead.jpg" alt="">
+        <h1 class="header" >The Horsehead Nebula in Orion: An unbridled look</h1> 
+        <p class="more">The Horsehead Nebula has captured the public's attention like few other celestial objects. And though its history is fascinating, it's also mysterious&nbsp;<b>Read More</b>
+        </p>
+        </a>
+        <a href=""  class="search-result" class="fade">
+            <img  src="butterfly.jpg" alt="">
+            <h1 class="header" >Butterfly Nebula Facts (NGC 6302)</h1> 
+            <p class="more">The Butterfly Nebula is the remnants of a dying star that is estimated at having five times the mass of our Sun. You can see why it gets its name, the gasses sprouting out from the centre look like butterfly wings.&nbsp;<b>Read More</b>
+            </p>
+        </a>
+        <a href=""  class="search-result" class="fade">
+            <img  src="cassiopia.jpg" alt="">
+            <h1 class="header" >Cassiopeia A (Cas A)</h1> 
+            <p class="more">Cassiopeia A (Cas A) is a supernova remnant located in the constellation Cassiopeia. It lies at an approximate distance of 11,000 light years from Earth and has a diameter of about 10 light years. The remnant can be seen in visible light with amateur telescopes, starting with 9.25-inch instruments with filters.&nbsp;<b>Read More</b>
+            </p>
+        </a>
+
+    </section>
+    </main> 
+    <script>
+    function performSearch() {
+        const searchInput = document.getElementById('searchInput').value.toLowerCase();
+        const articles = document.querySelectorAll('.search-result');
+
+        articles.forEach(article => {
+            const articleText = article.innerText.toLowerCase();
+
+            // Show or hide articles based on the search query
+            if (articleText.includes(searchInput)) {
+                article.style.display = 'block';
+            } else {
+                article.style.display = 'none';
+            }
+        });
+    }
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,87 @@
+body{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(rocket2.jfif);
+    background-color: rgb(37, 15, 77);
+    height: 100%;
+    width: 100%;
+}
+fieldset{
+    background-color:white;
+    border-radius: 20px;
+    border-color:purple;
+    width: 35%;
+    height: 750px;
+    margin-left: 5.7%;
+    margin-top: 7%;
+    color:darkmagenta;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    background-color: darkmagenta;
+    color: white;
+    border-radius: 5px;
+    margin-top: 2%;
+    width: 57%;
+    height: 50px;
+    margin-left: 21%;
+    font-size: 23px;
+}
+button:hover{
+    background-color: rgb(63, 26, 133);
+    color: rgb(255, 255, 255);
+}
+p{
+    margin-left: 21%;
+    font-size: 20px;
+    line-height: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#text-box{
+    margin-left: 20%;
+}
+.input{
+    position: relative;
+    border-radius: 20px;
+    border-color: darkmagenta;
+    width: 72%;
+    height: 45px;
+    text-indent: 12%;
+    font-size: 22px;
+}
+.input p{
+    left: 30%;
+}
+#Remember-me{
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20%;
+    margin-top: 4%;
+}
+#user-icon{
+    position: absolute;
+    display: flex;
+    bottom: 55%;
+    left: 15%;
+    z-index: 1;
+}
+#lock-icon{
+    position: absolute;
+    display: flex;
+    bottom: 49%;
+    left: 15%;
+    z-index: 1;
+}
+h1{
+    margin-top: 10%;
+    font-size: 50px;
+}
+a{
+    text-decoration: none;
+    color:rgb(208, 15, 215);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Sign{
+    margin-top: 5%;
+}
